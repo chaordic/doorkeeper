@@ -7,6 +7,7 @@
     request time
 - enhancements
   - [#293] ActionController::Instrumentation in TokensController
+  - [#298] Support for multiple redirect_uris added.
 - internals
   - Removes jQuery dependency
 
