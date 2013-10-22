@@ -3,12 +3,12 @@ require "spec_helper_integration"
 module Doorkeeper::OAuth
   describe PreAuthorization do
     let(:server) { double :server, :default_scopes => Scopes.new, :scopes => Scopes.from_string('public') }
-    let(:client) { double :client, :redirect_uri => 'http://tst.com/auth' }
+    let(:client) { double :client, :redirect_uris => 'http://tst.com/auth' }
 
     let :attributes do
       {
         :response_type => 'code',
-        :redirect_uri => 'http://tst.com/auth',
+        :redirect_uri  => 'http://tst.com/auth',
         :state => 'save-this'
       }
     end
